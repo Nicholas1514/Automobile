@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,6 +14,7 @@ namespace Automobile
     public partial class Form1 : Form
     {
         Automobile auto;
+        
         public Form1()
         {
             InitializeComponent();
@@ -26,19 +28,54 @@ namespace Automobile
 
         private void button1_Click(object sender, EventArgs e)
         {
-          
-           if(checkBox1.Checked == true)
+            
+            string output = auto.AccendiSpegni();
+           
+            if (auto.Accensione)
             {
-                MessageBox.Show("La macchina è accesa");
+                listView1.Items.Add(output);
+                button1.BackColor = Color.Green;
+            }
+            else 
+            {
+
+                listView1.Items.Add(output);
+                button1.BackColor = Color.Red;
+                
+            }
+           
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            button3.BackColor = Color.White;
+            string output = auto.Accellera();
+            if (auto.Accensione)
+            {
+                listView1.Items.Add(output);
             }
             else
             {
-                checkBox1.Checked = false;
-                MessageBox.Show("La macchina è spenta");
-                
+                listView1.Items.Add(output);
             }
-          
-          
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string output = auto.Frena();
+            if (auto.Accensione)
+            {
+                listView1.Items.Add(output);
+                button3.BackColor = Color.Red;
+            }
+            else
+            {
+                listView1.Items.Add(output);
+            }
+        
+            
+
         }
     }
 }
