@@ -77,5 +77,18 @@ namespace Automobile
             
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string output = auto.MarciaSu();
+            if (auto.Accensione && auto.Velocita == auto.Velcambio)
+            {
+                listView1.Items.Add(output);
+            }
+            else
+            {
+                listView1.Items.Add(output);
+            }
+        }
     }
 }
