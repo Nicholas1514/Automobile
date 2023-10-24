@@ -33,6 +33,7 @@ namespace Automobile
 
 		public int Marcia
 		{
+
 			set { _marcia = value; }
 			get { return _marcia; }
 		}
@@ -108,7 +109,7 @@ namespace Automobile
 			string a;
 			if (Accensione && Velocita > 0)
 			{
-				Velocita -= 10;
+				Velocita -= 20;
 				a = $"Hai frenato, ora stai viaggiando a {Velocita}" + " Km/h";
 			}
 			else
@@ -129,7 +130,7 @@ namespace Automobile
 
 				
 			}
-			else if (Accensione && Velcambio == Velocita)
+			else if (Accensione && Velcambio <= Velocita)
 			{
 				Marcia += 1;
 				a = $"Hai cambiato marcia, ora sei in {Marcia} ^";
@@ -138,7 +139,22 @@ namespace Automobile
 			}
 			else
 			{
-				a = "Non ci sono le condizioni per cambiare la marcia";
+				a = "Non ci sono le condizioni per aumentare la marcia";
+			}
+			return a;
+		}
+
+		public string MarciaGiu()
+		{
+			string a;
+			if(Accensione && Velocita - Velcambio >= 0)
+			{
+				Marcia -= 1;
+				a = $"Hai diminuito la marcia, ora sei in {Marcia} ^";
+			}
+			else
+			{
+				a = "Non ci sono le condizioni per diminuire la marcia";
 			}
 			return a;
 		}
@@ -148,4 +164,5 @@ namespace Automobile
 	}
 
 }
+
 

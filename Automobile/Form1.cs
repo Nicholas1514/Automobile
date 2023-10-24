@@ -90,5 +90,18 @@ namespace Automobile
                 listView1.Items.Add(output);
             }
         }
-    }
+
+		private void button5_Click(object sender, EventArgs e)
+		{
+      string output = auto.MarciaGiu();
+      if(auto.Accensione && auto.Velocita > 0)
+      {
+        listView1.Items.Add(output);
+      }
+      else
+      {
+        listView1.Items.Add(output);
+      }
+		}
+	}
 }
