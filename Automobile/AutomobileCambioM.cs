@@ -38,7 +38,8 @@ namespace Automobile
 				{
 					Velocita += 20;
 					Marcia += 1;
-					a = $"Hai accellerato, stai viaggiando a {Velocita}" + $" Km/h e sei in {Marcia}";
+					Ngiri += 200;
+					a = $"Hai accellerato, stai viaggiando a {Velocita}" + $" Km/h ,sei in {Marcia}, giri del motore: {Ngiri}";
 				}
 				else
 				{
@@ -58,7 +59,8 @@ namespace Automobile
 			{
 				Velocita -= 20;
 				Marcia -= 1;
-				a = $"Hai frenato, ora stai viaggiando a {Velocita}" + $" Km/h e sei in {Marcia}";
+				Ngiri -= 200;
+				a = $"Hai frenato, ora stai viaggiando a {Velocita}" + $" Km/h, sei in {Marcia}, giri del motore: {Ngiri}";
 			}
 			else
 			{

@@ -125,7 +125,7 @@
 			// 
 			this.button6.Location = new System.Drawing.Point(885, 368);
 			this.button6.Name = "button6";
-			this.button6.Size = new System.Drawing.Size(109, 70);
+			this.button6.Size = new System.Drawing.Size(135, 70);
 			this.button6.TabIndex = 14;
 			this.button6.Text = "ACCENSIONE ";
 			this.button6.UseVisualStyleBackColor = true;
@@ -151,7 +151,7 @@
 			// 
 			// button7
 			// 
-			this.button7.Location = new System.Drawing.Point(1026, 368);
+			this.button7.Location = new System.Drawing.Point(1113, 368);
 			this.button7.Name = "button7";
 			this.button7.Size = new System.Drawing.Size(112, 70);
 			this.button7.TabIndex = 17;
@@ -161,7 +161,7 @@
 			// 
 			// button8
 			// 
-			this.button8.Location = new System.Drawing.Point(1166, 368);
+			this.button8.Location = new System.Drawing.Point(1335, 368);
 			this.button8.Name = "button8";
 			this.button8.Size = new System.Drawing.Size(98, 70);
 			this.button8.TabIndex = 18;
@@ -173,6 +173,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.SystemColors.ControlLightLight;
 			this.ClientSize = new System.Drawing.Size(1445, 557);
 			this.Controls.Add(this.button8);
 			this.Controls.Add(this.button7);
