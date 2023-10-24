@@ -13,7 +13,7 @@ namespace Automobile
 		protected int _velocità;
 		protected bool _accensione;
 		protected int _marcia;
-		protected const short _velcambio = 20;
+		protected int _velcambio;
 
 		public int Velocita
 		{
@@ -23,6 +23,7 @@ namespace Automobile
 		}
 		public int Velcambio
 		{
+			set { _velcambio = value; }
 			get { return _velcambio; }
 		}
 		public bool Accensione
@@ -37,6 +38,7 @@ namespace Automobile
 			set {_marcia = value; }
 			get { return _marcia; }
 		}
+	
 		public Automobile(int velocità, bool accensione)
 		{
 			velocità = Velocita;
@@ -49,6 +51,7 @@ namespace Automobile
 			Velocita = 0;
 			Accensione = false;
 			Marcia = 0;
+			Velcambio = 20;
 		}
 
 		public virtual string AccendiSpegni()
@@ -79,7 +82,7 @@ namespace Automobile
 
 
 		}
-		public virtual string Accellera()
+		public string Accellera()
 		{
 			string a;
 

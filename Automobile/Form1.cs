@@ -120,5 +120,32 @@ namespace Automobile
 				listView2.Items.Add(output);
 			}
 		}
+
+		private void button7_Click(object sender, EventArgs e)
+		{
+      string output = auto2.Acc();
+			if (auto.Accensione)
+			{
+				listView2.Items.Add(output);
+			}
+			else
+			{
+				listView2.Items.Add(output);
+			}
+		}
+
+		private void button8_Click(object sender, EventArgs e)
+		{
+      string output = auto2.F();
+      if (auto.Accensione)
+			{
+				listView2.Items.Add(output);
+				button3.BackColor = Color.Red;
+			}
+			else
+			{
+				listView2.Items.Add(output);
+			}
+		}
 	}
 }
