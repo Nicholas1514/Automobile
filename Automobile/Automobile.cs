@@ -10,10 +10,10 @@ namespace Automobile
 	internal class Automobile
 	{
 
-		private int _velocità;
-		private bool _accensione;
-		private int _marcia;
-		private const short _velcambio = 20;
+		protected int _velocità;
+		protected bool _accensione;
+		protected int _marcia;
+		protected const short _velcambio = 20;
 
 		public int Velocita
 		{
@@ -34,7 +34,7 @@ namespace Automobile
 		public int Marcia
 		{
 
-			set { _marcia = value; }
+			set {_marcia = value; }
 			get { return _marcia; }
 		}
 		public Automobile(int velocità, bool accensione)
@@ -51,7 +51,7 @@ namespace Automobile
 			Marcia = 0;
 		}
 
-		public string AccendiSpegni()
+		public virtual string AccendiSpegni()
 		{
 			string a;
 			if (Accensione)
@@ -79,7 +79,7 @@ namespace Automobile
 
 
 		}
-		public string Accellera()
+		public virtual string Accellera()
 		{
 			string a;
 
@@ -104,7 +104,7 @@ namespace Automobile
 
 
 		}
-		public string Frena()
+		public virtual string Frena()
 		{
 			string a;
 			if (Accensione && Velocita > 0)

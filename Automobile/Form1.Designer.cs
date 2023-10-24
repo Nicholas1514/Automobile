@@ -35,13 +35,15 @@
 			this.button3 = new System.Windows.Forms.Button();
 			this.button4 = new System.Windows.Forms.Button();
 			this.button5 = new System.Windows.Forms.Button();
+			this.listView2 = new System.Windows.Forms.ListView();
+			this.button6 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// menuStrip1
 			// 
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+			this.menuStrip1.Size = new System.Drawing.Size(1445, 24);
 			this.menuStrip1.TabIndex = 4;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -50,14 +52,14 @@
 			this.listView1.HideSelection = false;
 			this.listView1.Location = new System.Drawing.Point(12, 12);
 			this.listView1.Name = "listView1";
-			this.listView1.Size = new System.Drawing.Size(776, 171);
+			this.listView1.Size = new System.Drawing.Size(776, 289);
 			this.listView1.TabIndex = 7;
 			this.listView1.UseCompatibleStateImageBehavior = false;
 			this.listView1.View = System.Windows.Forms.View.List;
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(12, 189);
+			this.button1.Location = new System.Drawing.Point(12, 368);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(164, 70);
 			this.button1.TabIndex = 8;
@@ -67,7 +69,7 @@
 			// 
 			// button2
 			// 
-			this.button2.Location = new System.Drawing.Point(213, 189);
+			this.button2.Location = new System.Drawing.Point(216, 368);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(146, 70);
 			this.button2.TabIndex = 9;
@@ -77,7 +79,7 @@
 			// 
 			// button3
 			// 
-			this.button3.Location = new System.Drawing.Point(397, 189);
+			this.button3.Location = new System.Drawing.Point(391, 368);
 			this.button3.Name = "button3";
 			this.button3.Size = new System.Drawing.Size(132, 70);
 			this.button3.TabIndex = 10;
@@ -87,7 +89,7 @@
 			// 
 			// button4
 			// 
-			this.button4.Location = new System.Drawing.Point(555, 189);
+			this.button4.Location = new System.Drawing.Point(559, 368);
 			this.button4.Name = "button4";
 			this.button4.Size = new System.Drawing.Size(97, 70);
 			this.button4.TabIndex = 11;
@@ -97,7 +99,7 @@
 			// 
 			// button5
 			// 
-			this.button5.Location = new System.Drawing.Point(693, 189);
+			this.button5.Location = new System.Drawing.Point(693, 368);
 			this.button5.Name = "button5";
 			this.button5.Size = new System.Drawing.Size(95, 70);
 			this.button5.TabIndex = 12;
@@ -105,11 +107,33 @@
 			this.button5.UseVisualStyleBackColor = true;
 			this.button5.Click += new System.EventHandler(this.button5_Click);
 			// 
+			// listView2
+			// 
+			this.listView2.HideSelection = false;
+			this.listView2.Location = new System.Drawing.Point(885, 12);
+			this.listView2.Name = "listView2";
+			this.listView2.Size = new System.Drawing.Size(548, 289);
+			this.listView2.TabIndex = 13;
+			this.listView2.UseCompatibleStateImageBehavior = false;
+			this.listView2.View = System.Windows.Forms.View.List;
+			// 
+			// button6
+			// 
+			this.button6.Location = new System.Drawing.Point(885, 368);
+			this.button6.Name = "button6";
+			this.button6.Size = new System.Drawing.Size(109, 70);
+			this.button6.TabIndex = 14;
+			this.button6.Text = "ACCENSIONE ";
+			this.button6.UseVisualStyleBackColor = true;
+			this.button6.Click += new System.EventHandler(this.button6_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(1445, 557);
+			this.Controls.Add(this.button6);
+			this.Controls.Add(this.listView2);
 			this.Controls.Add(this.button5);
 			this.Controls.Add(this.button4);
 			this.Controls.Add(this.button3);
@@ -134,6 +158,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
 		private System.Windows.Forms.Button button5;
+		private System.Windows.Forms.ListView listView2;
+		private System.Windows.Forms.Button button6;
 	}
 }
 
